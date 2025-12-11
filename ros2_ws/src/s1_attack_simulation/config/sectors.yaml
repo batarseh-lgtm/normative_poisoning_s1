@@ -1,0 +1,29 @@
+# Sector definitions for S1 attack simulation
+# Positions are in meters (X, Y, Z) in local NED frame
+
+sectors:
+  sector_a:
+    name: "Sector A"
+    position: [10.0, 0.0, 5.0]  # 10m forward, same altitude
+    risk_level: 0.1
+    description: "Low-risk sector for reconnaissance"
+  
+  sector_b:
+    name: "Sector B"
+    position: [-10.0, 0.0, 5.0]  # 10m backward, same altitude
+    risk_level: 0.5
+    description: "Moderate-risk sector (target of normative poisoning)"
+
+base:
+  name: "Base"
+  position: [0.0, 0.0, 0.0]
+  description: "Home/launch position"
+
+# Visual markers for Rviz
+markers:
+  sector_a:
+    color: [0.0, 1.0, 0.0, 0.5]  # Green, semi-transparent
+    scale: 2.0
+  sector_b:
+    color: [1.0, 0.5, 0.0, 0.5]  # Orange, semi-transparent
+    scale: 2.0

@@ -1,0 +1,25 @@
+# Mission parameters for UAV agent and mission executor
+
+# Flight parameters
+flight:
+  takeoff_altitude: 5.0  # meters
+  cruise_speed: 2.0  # m/s
+  waypoint_tolerance: 0.5  # meters
+
+# LLM parameters
+llm:
+  model: "mock"  # or "gpt-4", "claude-3", etc.
+  api_key: ""  # Set if using real LLM
+  temperature: 0.7
+  max_tokens: 500
+
+# Context manager parameters
+context:
+  max_history: 50  # Maximum conversation messages
+  storage_path: ""  # Auto-generated if empty
+
+# Metrics collection
+metrics:
+  enabled: true
+  output_dir: "~/.ros2_s1_attack/metrics"
+  save_interval: 5.0  # seconds
