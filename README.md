@@ -8,6 +8,18 @@ This repository contains **two implementations** of the **S1 Normative Poisoning
 
 The S1 attack demonstrates how an adversary can inject normative biases through operator commands over time, causing an AI agent to deviate from mission objectives in favor of the injected heuristics. This is a logical vulnerability in long-context AI systems.
 
+## ✅ **Attack Successfully Demonstrated**
+
+> **Status**: Attack executed and verified on 2025-12-12
+> 
+> **Results**: 
+> - ✅ **Baseline**: 100% Sector B coverage (5/5 missions)
+> - ✅ **After Poisoning**: 0% Sector B coverage despite neutral commands
+> - ✅ **Behavior Change**: Agent internalized anti-Sector-B norms from conversation history
+> - ✅ **Attack Vector**: Normative poisoning via long-term chat context
+>
+> The agent successfully avoided Sector B when given neutral "Survey Sectors A and B" commands after being exposed to biased operator messages during the injection phase.
+
 ---
 
 ## 🎯 Quick Start
